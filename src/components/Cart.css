@@ -1,0 +1,301 @@
+/* Existing Styles */
+.cart-container-title h1 {
+    font-size: 50px;
+    color: #311F09;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px 0;
+    transition: all 0.3s ease; /* Add transition */
+  }
+  
+  .cart-container-title h1:hover {
+    color: #FF8A00; /* Hover effect */
+  }
+  
+  .wrap-order {
+    width: 80%;
+    min-height: 54vh;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-out; /* Added animation for fade-in */
+  }
+  
+  .wrap-order-ul {
+    margin: 20px 0;
+  }
+  
+  .wrap-order-ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    padding: 15px 30px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: all 0.3s;
+    opacity: 0; /* Initially hidden */
+    animation: fadeInUp 0.5s forwards; /* Slide-up animation */
+  }
+  
+  .wrap-order-ul li:nth-child(even) {
+    animation-delay: 0.2s; /* Delay for staggered animation */
+  }
+  
+  .wrap-order-ul li:hover {
+    background-color: #FF8A00;
+    color: white;
+    border-color: #FF8A00;
+    transform: scale(1.05); /* Zoom-in effect */
+  }
+  
+  .wrap-order-ul li b {
+    font-size: 22px;
+  }
+  
+  .wrap-order-ul li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrap-order-ul-img {
+    width: 113px;
+  }
+  
+  .wrap-order-remove-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+  }
+  
+  .wrap-order-remove-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  
+  .wrap-order-remove-btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Empty cart message */
+  .empty-cart-message {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    color: red;
+    animation: fadeIn 0.5s ease-out; /* Fade-in effect */
+  }
+  
+  .empty-cart-message h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .empty-cart-message p {
+    font-size: 18px;
+  }
+  
+  /* Total price section */
+  .cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+    font-size: 20px;
+  }
+  
+  .cart-total h2 {
+    font-weight: bold;
+    color: #311F09;
+  }
+  
+  /* Remove all button */
+  .remove-all-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-all-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Voucher section */
+  .vaucher input {
+    background-color: red;
+  }
+  
+  .wrap-all-vacher {
+    width: 80%;
+    margin: 50px auto;
+    animation: fadeIn 0.5s ease-out;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .wrap-vaucher-total-price {
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 4px solid #FF8A00;
+    border-radius: 5px;
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards; /* Added fade-in with slide up */
+  }
+  
+  .wrap-vaucher-total-price input {
+    width: 90%;
+    outline-color: #FF8A00;
+    background-color: #FF8A00;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .wrap-vaucher-total-price input::placeholder {
+    color: white;
+  }
+  
+  .wrap-vaucher-total-price button {
+    margin: 10px auto;
+    padding: 6px 20px;
+    border: 4px solid #FF8A00;
+    border-radius: 5px;
+    color: #FF8A00;
+    transition: background-color 0.2s ease, transform 0.2s;
+  }
+  
+  .wrap-vaucher-total-price button:hover {
+    background-color: #FF8A00;
+    color: white;
+  }
+  
+  .wrap-vaucher-total-price button:active {
+    transform: scale(0.95); /* Button press animation */
+  }
+  
+  .total-price {
+    color: #FF8A00;
+    font-weight: 700;
+  }
+  
+  .total-price span {
+    color: green;
+  }
+  
+  .wrap-checkout-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 50px;
+  }
+  
+  .checkout-btn {
+    width: 200px;
+    background-color: #34c759;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #28a745;
+  }
+  
+  /* Responsive adjustments */
+  .cart-delete-all {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .cart-delete-all:hover {
+    background-color: #c0392b;
+    transform: scale(1.05); /* Hover effect for delete all button */
+  }
+  
+  @media (max-width: 567px) {
+    .cart-container-title h1 {
+      font-size: 35px;
+    }
+  
+    .wrap-order-ul li {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      text-align: center;
+    }
+  
+    .wrap-order-remove-btn {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      grid-column: auto;
+    }
+  
+    .empty-cart-message h1 {
+      font-size: 24px;
+    }
+  
+    .empty-cart-message p {
+      font-size: 16px;
+    }
+
+    .wrap-all-vacher{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

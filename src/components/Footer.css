@@ -1,0 +1,145 @@
+/* Overall wrapper for the footer */
+.wrap-footer {
+    width: 100%;
+    background-color: #311F09;
+}
+
+/* Footer content */
+.footer {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    color: white;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+/* Header logo text */
+.header-logo-p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Social media icons wrapper */
+.footer-delizi-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Individual social icon styling */
+.footer-delizi-socials {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #DDD5D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-delizi-socials:hover {
+    background-color: #FF8A00;
+    transform: scale(1.1); /* Adds a subtle zoom effect */
+}
+
+/* Social media icons (SVG) */
+.footer-delizi-socials svg {
+    color: black;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.footer-delizi-socials:hover svg {
+    color: white;
+}
+
+/* Margin applied to various sections */
+.margin-bottom {
+    margin-bottom: 15px;
+}
+
+/* Section titles for page, information, etc. */
+.footer-page-title,
+.footer-information-title,
+.footer-get-in-title {
+    color: #FF8A00;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Footer text and links */
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    position: relative;
+    cursor: pointer; /* Add pointer to p elements */
+    transition: color 0.3s ease;
+}
+
+/* Hover effect on <p> elements */
+.footer p:hover {
+    color: #FF8A00;
+}
+
+/* Fancy underline hover effect for <p> */
+.footer p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #FF8A00;
+    transition: width 0.3s ease;
+}
+
+.footer p:hover::after {
+    width: 100%;
+}
+
+/* Link styles */
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #FF8A00;
+    text-decoration: underline;
+}
+
+/* Responsive behavior for medium screens */
+@media (max-width: 1200px) {
+    .footer {
+        width: 90%;
+    }
+}
+
+/* Responsive grid for smaller screens */
+@media (max-width: 967px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Fully stacked layout for very small screens */
+@media (max-width: 567px) {
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}

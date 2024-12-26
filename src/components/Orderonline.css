@@ -1,0 +1,17 @@
+.order-title{
+    font-size: 60px;
+    color: #311F09;
+    text-align: center;
+}
+
+@media(max-width: 867px){
+    .order-title{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 567px){
+    .order-title{
+        font-size: 30px;
+    }
+}

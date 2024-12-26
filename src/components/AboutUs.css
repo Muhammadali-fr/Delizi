@@ -1,0 +1,221 @@
+.about {
+    margin: 50px 0;
+}
+
+.about-restautant {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-restautant-left {
+    width: 60%;
+}
+
+.about-restautant-left img {
+    max-width: 549px;
+    width: 100%;
+}
+
+.about-restautant-right {
+    width: 40%;
+}
+
+.about-restautant-right-h1 {
+    max-width: 360px;
+    font-family: 'Tinos', serif;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.about-restautant-right h1 span {
+    color: #FF8A00;
+    font-family: 'Tinos', serif;
+}
+
+.about-restautant-right p {
+    max-width: 424px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #5C4529;
+    /* line-height: 40px; */
+}
+
+.about-restautant-right-img {
+    width: 100%;
+    display: none;
+    margin: 30px auto;
+    max-width: 346px;
+}
+
+.about-sed {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about-sed-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.about-sed-left img {
+    width: 100%;
+}
+
+.aboutSedH {
+    display: none;
+}
+
+/* Container styling */
+.about-own {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Image styling */
+.about-own-left img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Right section styling */
+.about-own-right {
+    max-width: 500px;
+    color: #4a3c2b;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #4a3c2b;
+}
+
+.highlight {
+    color: #d4903e; /* Orange-brown color for "Owner" text */
+}
+
+.about-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #4a3c2b;
+}
+
+.about-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4a3c2b;
+    position: relative;
+    padding: 0 20px;
+}
+
+.quote {
+    font-size: 2rem;
+    color: #d4903e;
+    font-weight: bold;
+    vertical-align: text-top;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .about-own {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-own-left img {
+        max-width: 100%;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-name {
+        font-size: 1.5rem;
+    }
+
+    .about-description {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+@media(max-width: 967px) {
+
+    .about-restautant-right-h1 {
+        font-size: 50px;
+    }
+
+    .about-sed-left{
+        width: 70%;
+    }
+
+    .about-restautant-right p {
+        font-size: medium;
+    }
+
+}
+
+@media(max-width: 967px) {
+    .about-restautant {
+        flex-direction: column;
+    }
+
+    .about-restautant-left {
+        display: none;
+    }
+
+
+
+    .about-restautant-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-restautant-right-img {
+        display: block;
+    }
+
+    .about-restautant-right p {
+        margin: 0 auto;
+    }
+
+    .about-restautant-right-h1 {
+        font-size: 40px;
+        margin: 0 auto;
+    }
+
+    .about-sed {
+        flex-direction: column;
+        margin: 50px auto;
+    }
+
+    .aboutSedNH {
+        display: none;
+    }
+
+    .aboutSedH {
+        display: block;
+    }
+
+}

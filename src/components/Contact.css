@@ -1,0 +1,109 @@
+.wrap-contact {
+    width: 100%;
+}
+
+.contact {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    text-align: center;
+    color: #311F09;
+    font-size: 60px;
+}
+
+.contact p {
+    max-width: 774px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #4a2c06;
+}
+
+.contact-description {
+    color: #6d5d4e;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-input,
+.contact-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+.contact-textarea {
+    height: 150px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.contact-submit-btn {
+    background-color: #ff7a00;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.contact-submit-btn:hover {
+    background-color: #e66a00;
+}
+
+.contact-map {
+    width: 100%;
+    margin: 100px 0;
+}
+
+.contact-map-iframe {
+    width: 100%;
+    height: 70vh;
+}
+
+
+@media(max-width: 867px) {
+    .contact h1 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 567px) {
+    .contact h1 {
+        font-size: 25px;
+    }
+}
